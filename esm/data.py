@@ -271,6 +271,7 @@ class BatchConverter(object):
             max_len = max(len(seq_encoded) for seq_encoded in seq_encoded_list)
         else:
             max_len = self.max_len
+            
         tokens = torch.empty(
             (
                 batch_size,
